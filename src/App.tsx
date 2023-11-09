@@ -12,7 +12,9 @@ function App() {
         .then((res) => res.json())
         .then((albums) => setAlbums(albums));
     };
+
     getAlbums();
+    
   },[]);
 
   return (
