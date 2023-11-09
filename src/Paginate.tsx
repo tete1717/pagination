@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AlbumList from "./AlbumList"
-import "./pagenation.css"
+import "./Paginate.css"
 import Album from "./type"
 import ReactPaginate from "react-paginate";
 
@@ -8,7 +8,7 @@ type Props ={
   albums:Album[];
 };
 
-const Pagenation = (props:Props) => {
+const Paginate = (props:Props) => {
   const { albums } = props;
 
   const itemsParPage = 6; //任意に変更
@@ -52,4 +52,4 @@ const Pagenation = (props:Props) => {
   )
 }
 
-export default Pagenation
+export default Paginate
